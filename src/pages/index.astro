@@ -5,7 +5,7 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Welcome to Astro.">
   <main>
     <header
-      class="py-3 px-10 flex items-center fixed top-0 w-full justify-between"
+      class="py-3 px-10 flex items-center fixed top-0 w-full justify-between z-40 text-white"
     >
       <div class="flex flex-grow basis-0">
         <svg
@@ -20,7 +20,7 @@ import Layout from "../layouts/Layout.astro";
 
       <nav>
         <ul
-          class="flex text-sm [&>li>a]:text-gray:900 [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
+          class="flex text-sm [&>li>a]:text-gray-900 [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
         >
           <li><a href="#">Model S</a></li>
           <li><a href="#">Model 3</a></li>
@@ -33,7 +33,7 @@ import Layout from "../layouts/Layout.astro";
 
       <nav class="flex flex-grow justify-end basis-0">
         <ul
-          class="flex text-sm [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
+          class="flex text-sm [&>li>a]:text-gray-900 [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
         >
           <li><a href="#">Soporte</a></li>
           <li><a href="#">Tienda</a></li>
@@ -42,5 +42,15 @@ import Layout from "../layouts/Layout.astro";
         </ul>
       </nav>
     </header>
+
+    <section
+      class="bg-black h-screen w-screen text-center relative overflow-hidden"
+    >
+      <h2>Disfrute de Tesla</h2>
+      <p>Programe una pruba de conduccion ahora mismo</p>
+      <a href="">Prueba de manejo</a>
+
+      <video autoplay loop src="/public/public_video.webm"></video>
+    </section>
   </main>
 </Layout>;
